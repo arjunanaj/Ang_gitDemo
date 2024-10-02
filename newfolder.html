@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           overflow: hidden;
+           animation-name: body;
+           animation-duration: 3s;
+           animation-iteration-count: infinite;
+        }
+        .box{
+            width: 100px;
+            height: 80px;
+        position: relative;
+        top: 20px;
+        left:40px;
+        background-color: rgb(226, 255, 255);
+       animation-name:boxanim;
+       animation-duration: 3s;
+ 
+        }
+        
+   .bus{
+    width: 200px;
+    position: relative;
+    top: 400px;
+animation-name: bus1;
+animation-duration: 10s;
+   }
+   .bus2{
+    width: 200px;
+    position: relative;
+    top: 400px;
+animation-name: bus2;
+animation-duration: 10s;
+   }
+   @keyframes body {
+     0%{background-color: rgb(160, 160, 160);}
+     25%{background-color: rgb(252, 250, 146);}
+     50%{background-color: rgb(249, 252, 66);}
+     75%{background-color: rgb(225, 244, 81);}
+     100%{background-color: rgb(37, 36, 34);}
+   
+   }
+   @keyframes bus1 {
+     from{left: -300px;}
+     to{left: 1600px;}
+   
+   }
+
+   @keyframes  bus2 {
+    from{transform: translateX(-200px);}
+    to{transform: translateX(400px)}
+   }
+        
+    </style>
+</head>
+<body>
+   
+
+    <img src="img/double decker bus-pana.png" alt="bus" class="bus2">
+    <div>
+
+    </div>
+    
+</body>
+</html>
